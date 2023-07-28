@@ -7,4 +7,6 @@ import com.vermeg.logmanager.entities.Log;
 
 @Repository
 public interface LogRepository extends JpaRepository<Log, Integer> {
+
+	Log findById(Long entityId);
 }

@@ -17,7 +17,7 @@ import jakarta.persistence.ManyToOne;
 public class Log {
 	@Id
 	@GeneratedValue
-	private int id;
+	private Integer id;
 
 	private String name;
 	private String path;
@@ -29,11 +29,11 @@ public class Log {
 	@JoinTable(name = "Log_User")
 	private List<User> User;
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
